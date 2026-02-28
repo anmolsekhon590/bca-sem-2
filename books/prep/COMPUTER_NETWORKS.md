@@ -18,6 +18,27 @@ This book covers the full stack of computer networking, from physical transmissi
 
 ---
 
+## Table of Contents
+
+| Unit | Topic |
+|------|-------|
+| 1 | [Introduction to Computer Networks](#unit-1-introduction-to-computer-networks) |
+| 2 | [Data Communication](#unit-2-data-communication) |
+| 3 | [Network Models](#unit-3-network-models) |
+| 4 | [Physical Layer](#unit-4-physical-layer) |
+| 5 | [Data Link Layer — Error Detection and Correction](#unit-5-data-link-layer--error-detection-and-correction) |
+| 6 | [Data Link Layer — Flow and Error Control Protocols](#unit-6-data-link-layer--flow-and-error-control-protocols) |
+| 7 | [Data Link Layer — Medium Access Control](#unit-7-data-link-layer--medium-access-control) |
+| 8 | [Network Layer — Logical Addressing](#unit-8-network-layer--logical-addressing) |
+| 9 | [Network Layer — Routing](#unit-9-network-layer--routing) |
+| 10 | [Transport Layer Protocols](#unit-10-transport-layer-protocols) |
+| 11 | [Congestion Control and Quality of Service](#unit-11-congestion-control-and-quality-of-service) |
+| 12 | [Application Layer — Services and Protocols](#unit-12-application-layer--services-and-protocols) |
+| 13 | [Internet and World Wide Web](#unit-13-internet-and-world-wide-web) |
+| 14 | [Network Security](#unit-14-network-security) |
+
+---
+
 ## Unit 1: Introduction to Computer Networks
 
 ### Summary

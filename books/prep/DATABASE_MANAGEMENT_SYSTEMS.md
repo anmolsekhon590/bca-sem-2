@@ -8,6 +8,27 @@ This book covers the full lifecycle of database systems from first principles th
 
 ---
 
+## Table of Contents
+
+| Unit | Topic |
+|------|-------|
+| 01 | [Introduction to Fundamentals of DBMS](#unit-01-introduction-to-fundamentals-of-dbms) |
+| 02 | [Database Design and ER Model](#unit-02-database-design-and-er-model) |
+| 03 | [Relational Database](#unit-03-relational-database) |
+| 04 | [SQL (DDL)](#unit-04-sql-ddl) |
+| 05 | [SQL (DML)](#unit-05-sql-dml) |
+| 06 | [Relational Languages](#unit-06-relational-languages) |
+| 07 | [Relational Database Design](#unit-07-relational-database-design) |
+| 08 | [Transaction Management](#unit-08-transaction-management) |
+| 09 | [Concurrency Control](#unit-09-concurrency-control) |
+| 10 | [SQL DCL/TCL](#unit-10-sql-dcltcl) |
+| 11 | [Recovery Systems](#unit-11-recovery-systems) |
+| 12 | [Distributed Databases](#unit-12-distributed-databases) |
+| 13 | [Cloud Databases](#unit-13-cloud-databases) |
+| 14 | [PL/SQL](#unit-14-plsql) |
+
+---
+
 ## Unit 01: Introduction to Fundamentals of DBMS
 
 ### Summary

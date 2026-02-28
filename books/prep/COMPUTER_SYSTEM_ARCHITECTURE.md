@@ -19,6 +19,27 @@ Key recurring themes:
 
 ---
 
+## Table of Contents
+
+| Unit | Topic |
+|------|-------|
+| 01 | [Binary Systems](#unit-01-binary-systems) |
+| 02 | [Boolean Algebra](#unit-02-boolean-algebra) |
+| 03 | [Implementation of Combinational Logic Design](#unit-03-implementation-of-combinational-logic-design) |
+| 04 | [Design of Synchronous Sequential Circuits](#unit-04-design-of-synchronous-sequential-circuits) |
+| 05 | [Register Transfer and Micro-Operations](#unit-05-register-transfer-and-micro-operations) |
+| 06 | [Instruction Codes and Instruction Cycles](#unit-06-instruction-codes-and-instruction-cycles) |
+| 07 | [Machine Language](#unit-07-machine-language) |
+| 08 | [Machine Programming](#unit-08-machine-programming) |
+| 09 | [Register Organization](#unit-09-register-organization) |
+| 10 | [Addressing Modes](#unit-10-addressing-modes) |
+| 11 | [Pipeline Processing](#unit-11-pipeline-processing) |
+| 12 | [Memory Technology](#unit-12-memory-technology) |
+| 13 | [I/O Subsystems](#unit-13-io-subsystems) |
+| 14 | [Hardware Description Logic (HDL)](#unit-14-hardware-description-logic-hdl) |
+
+---
+
 ## Unit 01: Binary Systems
 
 ### Summary

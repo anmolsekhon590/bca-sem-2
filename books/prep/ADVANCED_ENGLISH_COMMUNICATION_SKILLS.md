@@ -10,6 +10,27 @@ This book is a comprehensive course in English communication covering two broad 
 
 ---
 
+## Table of Contents
+
+| Unit | Topic |
+|------|-------|
+| 1 | [Reading Texts of Different Genres and of Varying Length](#unit-1-reading-texts-of-different-genres-and-of-varying-length) |
+| 2 | [Different Strategies of Reading Comprehension](#unit-2-different-strategies-of-reading-comprehension) |
+| 3 | [Reading and Interpreting Non-Linguistic Texts](#unit-3-reading-and-interpreting-non-linguistic-texts) |
+| 4 | [Reading and Understanding Incomplete Texts](#unit-4-reading-and-understanding-incomplete-texts) |
+| 5 | [Analysing a Topic for an Essay or Report](#unit-5-analysing-a-topic-for-an-essay-or-report) |
+| 6 | [Editing the Draft and Preparing the Final Draft](#unit-6-editing-the-draft-and-preparing-the-final-draft) |
+| 7 | [Re-Draft a Piece of Text with a Different Perspective](#unit-7-re-draft-a-piece-of-text-with-a-different-perspective) |
+| 8 | [Summarise a Piece of Prose or Poetry](#unit-8-summarise-a-piece-of-prose-or-poetry) |
+| 9 | [Using Phrases, Idioms, and Punctuation Appropriately](#unit-9-using-phrases-idioms-and-punctuation-appropriately) |
+| 10 | [Introduction to Communication — Principles and Process](#unit-10-introduction-to-communication--principles-and-process) |
+| 11 | [Verbal and Non-Verbal Communication](#unit-11-verbal-and-non-verbal-communication) |
+| 12 | [Identifying and Overcoming Problems of Communication](#unit-12-identifying-and-overcoming-problems-of-communication) |
+| 13 | [Communicative Competence](#unit-13-communicative-competence) |
+| 14 | [Cross-Cultural Communication](#unit-14-cross-cultural-communication) |
+
+---
+
 ## Unit 1: Reading Texts of Different Genres and of Varying Length
 
 ### Key Topics

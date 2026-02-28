@@ -6,6 +6,27 @@ This book covers Object-Oriented Programming using C++ from fundamentals to adva
 
 ---
 
+## Table of Contents
+
+| Unit | Topic |
+|------|-------|
+| 01 | [Principles of OOP](#unit-01-principles-of-oop) |
+| 02 | [Basics of C++](#unit-02-basics-of-c) |
+| 03 | [Operators and Type Casting](#unit-03-operators-and-type-casting) |
+| 04 | [Control Structures](#unit-04-control-structures) |
+| 05 | [Pointers and Structures](#unit-05-pointers-and-structures) |
+| 06 | [Classes and Objects](#unit-06-classes-and-objects) |
+| 07 | [More on Classes and Objects](#unit-07-more-on-classes-and-objects) |
+| 08 | [Handling Functions](#unit-08-handling-functions) |
+| 09 | [More on Functions](#unit-09-more-on-functions) |
+| 10 | [Static Members and Polymorphism](#unit-10-static-members-and-polymorphism) |
+| 11 | [Constructors and Destructors](#unit-11-constructors-and-destructors) |
+| 12 | [More on Constructors and Destructors](#unit-12-more-on-constructors-and-destructors) |
+| 13 | [Inheritance](#unit-13-inheritance) |
+| 14 | [File Handling](#unit-14-file-handling) |
+
+---
+
 ## Unit 01: Principles of OOP
 
 ### Key Topics

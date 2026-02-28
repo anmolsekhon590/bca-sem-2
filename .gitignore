@@ -1,0 +1,10 @@
+# Generated outputs — re-run chunk_by_unit.py to regenerate
+books/markdown/
+books/chunks/
+
+# Python virtualenv
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc

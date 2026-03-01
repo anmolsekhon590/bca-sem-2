@@ -1081,10 +1081,17 @@ int main() {
 | private | hidden | hidden | hidden |
 
 ### Key File Modes
+
 | Mode | Description |
-|---|---|
+|------|-------------|
 | ios::in | Read |
 | ios::out | Write (truncate) |
 | ios::app | Append |
 | ios::binary | Binary mode |
 | ios::ate | Seek to end on open |
+
+---
+
+*End of Object Oriented Programming Prep Material*
+
+*Optimized for exam revision | Covers 14 units of C++ OOP*"

@@ -1,7 +1,7 @@
 # Computer System Architecture — Complete Exam Prep
 
-**Textbook:** Computer System Architecture (M. Morris Mano style), Lovely Professional University
-**Author of notes:** Dr. Divya, LPU
+**Textbook:** Computer System Architecture (M. Morris Mano style), Lovely Professional University  
+**Author of notes:** Dr. Divya, LPU  
 **Units covered:** 14
 
 ---
@@ -43,9 +43,11 @@ Key recurring themes:
 ## Unit 01: Binary Systems
 
 ### Summary
+
 Introduces the number systems used in digital computing: decimal (base-10), binary (base-2), octal (base-8), and hexadecimal (base-16). Covers number conversions between bases, complements (1's and 2's), and fixed-point/floating-point representation.
 
 ### Key Definitions and Concepts
+
 - **Binary Number System:** Base-2 system using only digits 0 and 1. Each bit position is weighted by a power of 2.
 - **Bit:** The basic unit of binary information (a single 0 or 1). Also called a binary digit.
 - **Nibble:** 4 bits. **Byte:** 8 bits. **Word:** typically 16 bits (context-dependent).
@@ -73,24 +75,31 @@ Introduces the number systems used in digital computing: decimal (base-10), bina
 ### Exam Questions and Answers
 
 **Q1. Convert (1101.101)₂ to decimal.**
+
 A: 1×2³ + 1×2² + 0×2¹ + 1×2⁰ + 1×2⁻¹ + 0×2⁻² + 1×2⁻³ = 8 + 4 + 0 + 1 + 0.5 + 0 + 0.125 = **13.625**
 
 **Q2. Convert (255)₁₀ to binary and hexadecimal.**
+
 A: (255)₁₀ = (1111 1111)₂ = (FF)₁₆
 
 **Q3. What is the 2's complement of (01101100)₂?**
+
 A: 1's complement = 10010011; add 1 → **10010100**
 
 **Q4. Why do computers use binary rather than decimal?**
+
 A: Electronic circuits have two stable states (on/off, high/low voltage), making binary naturally suited for hardware implementation. Decimal would require 10 distinct voltage levels.
 
 **Q5. Convert (A5)₁₆ to octal.**
+
 A: (A5)₁₆ = (1010 0101)₂ = (010 100 101)₂ = **(245)₈**
 
 **Q6. What is the range of an 8-bit unsigned binary number?**
+
 A: 0 to 2⁸ − 1 = **0 to 255**
 
 **Q7. Distinguish between 1's complement and 2's complement.**
+
 A: 1's complement inverts all bits. 2's complement inverts all bits and adds 1. 2's complement eliminates double representation of zero and is used in modern computers for subtraction.
 
 ---
@@ -98,9 +107,11 @@ A: 1's complement inverts all bits. 2's complement inverts all bits and adds 1. 
 ## Unit 02: Boolean Algebra
 
 ### Summary
+
 Introduces the algebraic system for binary logic: postulates, theorems, De Morgan's laws, canonical forms (SOP, POS), and minimization using K-maps and the Quine-McCluskey (tabulation) method.
 
 ### Key Definitions and Concepts
+
 - **Boolean Algebra:** An algebraic system with values {0, 1}, binary operators {+, ·}, and a unary NOT operator.
 - **Closure:** For any a, b ∈ S, a·b and a+b ∈ S.
 - **Commutative:** A+B = B+A; A·B = B·A
@@ -142,6 +153,7 @@ Introduces the algebraic system for binary logic: postulates, theorems, De Morga
 | 1 | 1 | 1   | 0      | 0  | 0  | 0     |
 
 ### K-Map Cell Count
+
 - 2 variables: 4 cells (2²)
 - 3 variables: 8 cells (2³)
 - 4 variables: 16 cells (2⁴)
@@ -150,24 +162,31 @@ Introduces the algebraic system for binary logic: postulates, theorems, De Morga
 ### Exam Questions and Answers
 
 **Q1. Simplify using Boolean algebra: F = A + A'B**
+
 A: F = (A+A')(A+B) = 1·(A+B) = **A + B**
 
 **Q2. State and prove De Morgan's First Theorem.**
+
 A: (A·B)' = A' + B'. Verified by truth table — columns (A·B)' and A'+B' are identical for all input combinations.
 
 **Q3. What is the difference between SOP and POS forms?**
+
 A: SOP (Sum of Products) is a sum of minterms — product terms ORed together. POS (Product of Sums) is a product of maxterms — sum terms ANDed together. Both are canonical forms.
 
 **Q4. How does a K-map minimize a Boolean function?**
+
 A: Place 1s on the map for each minterm. Group adjacent 1s in power-of-2 groups (1, 2, 4, 8, 16). Larger groups eliminate more variables. The minimized SOP is the sum of all group product terms.
 
 **Q5. Simplify: F = A'B'C + A'BC' + ABC' + ABC**
+
 A: Using K-map, groups yield: **A'B'C + AB + BC'** (simplified).
 
 **Q6. What is the Quine-McCluskey (tabulation) method?**
+
 A: A systematic two-step method: (1) Find all prime implicants by exhaustively combining minterms that differ by one variable. (2) Select the minimum set of prime implicants that covers all minterms. Applicable to any number of variables.
 
 **Q7. What is adjacency in a K-map?**
+
 A: Two cells are adjacent if they differ in exactly one variable. In a 3-variable K-map, cell 010 is adjacent to 000, 011, and 110, but NOT to 001 or 111.
 
 ---
@@ -175,9 +194,11 @@ A: Two cells are adjacent if they differ in exactly one variable. In a 3-variabl
 ## Unit 03: Implementation of Combinational Logic Design
 
 ### Summary
+
 Covers logic gates and their truth tables, and the design of key combinational circuits: half adder, full adder, subtractors, BCD adder, binary parallel adder, encoders, decoders, multiplexers, and demultiplexers.
 
 ### Key Definitions and Concepts
+
 - **Combinational Circuit:** Output depends only on current inputs (no memory). Consists of logic gates only.
 - **Sequential Circuit:** Output depends on current inputs AND stored state (uses flip-flops).
 - **Logic Gate:** Basic electronic circuit with one output and one or more inputs.
@@ -219,13 +240,13 @@ Covers logic gates and their truth tables, and the design of key combinational c
 **4-to-1 Multiplexer:**
 
 | S1 | S0 | Output |
-|----|-----|--------|
-| 0  | 0   | I0     |
-| 0  | 1   | I1     |
-| 1  | 0   | I2     |
-| 1  | 1   | I3     |
+|----|----|--------|
+| 0  | 0  | I0     |
+| 0  | 1  | I1     |
+| 1  | 0  | I2     |
+| 1  | 1  | I3     |
 
-Y = I0·S1'·S0' + I1·S1'·S0 + I2·S1·S0' + I3·S1·S0
+Y = I0·S1'S0' + I1·S1'S0 + I2·S1S0' + I3·S1S0
 
 **Octal-to-Binary Encoder Outputs:**
 - Z = D1 + D3 + D5 + D7
@@ -235,24 +256,31 @@ Y = I0·S1'·S0' + I1·S1'·S0 + I2·S1·S0' + I3·S1·S0
 ### Exam Questions and Answers
 
 **Q1. What is the difference between a half adder and a full adder?**
+
 A: A half adder adds two bits and produces Sum and Carry. A full adder adds three bits (two data + one carry-in) and produces Sum and Carry-out. Full adders can be cascaded to add multi-bit numbers.
 
 **Q2. How is binary subtraction A−B implemented in hardware?**
+
 A: Using 2's complement: invert B (1's complement via inverters), then set the initial carry-in to 1. The result is A + (2's complement of B) = A − B.
 
 **Q3. What correction is applied in a BCD adder and when?**
+
 A: When the binary sum of two BCD digits exceeds 9 (binary 1001) or produces a carry (K=1), binary 6 (0110) is added to correct the result. This converts invalid binary codes to valid BCD.
 
 **Q4. What is the difference between an encoder and a decoder?**
+
 A: An encoder converts 2ⁿ inputs to n outputs (e.g., octal-to-binary). A decoder converts n inputs to up to 2ⁿ outputs, generating all possible minterms. They perform opposite functions.
 
 **Q5. How does a multiplexer differ from a demultiplexer?**
+
 A: A MUX selects one of 2ⁿ inputs and routes it to a single output (many-to-one). A DEMUX routes a single input to one of 2ⁿ outputs (one-to-many). A decoder with enable input can function as a DEMUX.
 
 **Q6. What is carry propagation delay in a parallel adder?**
+
 A: In a ripple-carry adder, each full adder must wait for the carry from the previous stage. The worst case is carry propagating through all n stages, making total delay proportional to n × gate delay.
 
 **Q7. In a 1-to-4 DEMUX, write the output equations.**
+
 A: Y0 = S1'S0'D; Y1 = S1'S0D; Y2 = S1S0'D; Y3 = S1S0D
 
 ---
@@ -260,9 +288,11 @@ A: Y0 = S1'S0'D; Y1 = S1'S0D; Y2 = S1S0'D; Y3 = S1S0D
 ## Unit 04: Design of Synchronous Sequential Circuits
 
 ### Summary
+
 Covers sequential circuits, latches, flip-flops (SR, JK, D, T), clocked synchronous design, characteristic and excitation tables, state tables/diagrams, and counter design.
 
 ### Key Definitions and Concepts
+
 - **Sequential Circuit:** Output depends on current inputs AND present state. Contains combinational logic + storage elements in a feedback loop.
 - **Asynchronous Sequential Circuit:** State changes occur whenever inputs change (no clock). Prone to instability.
 - **Synchronous Sequential Circuit:** State changes only on clock edges. Uses flip-flops. Stable and predictable.
@@ -311,24 +341,31 @@ Q(t+1) = D
 ### Exam Questions and Answers
 
 **Q1. Distinguish between synchronous and asynchronous sequential circuits.**
+
 A: Synchronous circuits use a master clock; state transitions occur only at clock edges, making them predictable and stable. Asynchronous circuits respond immediately to input changes and can be unstable due to feedback paths.
 
 **Q2. What is the forbidden state in an SR flip-flop and why?**
+
 A: S=R=1 is forbidden because both Q and Q' are forced to 0 simultaneously, violating the complementary relationship. When inputs return to 0=0, the next state is unpredictable.
 
 **Q3. Why is the JK flip-flop preferred over the SR flip-flop?**
+
 A: The JK eliminates the forbidden state. When J=K=1, the output toggles (Q becomes Q'). It is more versatile and stable.
 
 **Q4. How does a D flip-flop simplify circuit design?**
+
 A: Q(t+1) = D, so the next state always equals the D input. This eliminates the need to handle forbidden input combinations and simplifies register design.
 
 **Q5. What is an excitation table used for?**
+
 A: An excitation table shows what input values are required to produce a desired state transition Q(t) → Q(t+1). It is used when designing sequential circuits to determine the input logic needed for each flip-flop.
 
 **Q6. Describe the design procedure for a synchronous sequential circuit.**
+
 A: (1) Derive the state diagram from specifications. (2) Create the state table. (3) Assign binary codes to states. (4) Choose flip-flop type. (5) Derive excitation equations using K-maps. (6) Derive output equations. (7) Implement circuit.
 
 **Q7. What is a counter? How does a 3-bit binary up-counter work?**
+
 A: A counter is a sequential circuit that cycles through binary states. A 3-bit binary up-counter cycles: 000→001→010→011→100→101→110→111→000, incrementing by 1 each clock pulse.
 
 ---
@@ -336,9 +373,11 @@ A: A counter is a sequential circuit that cycles through binary states. A 3-bit 
 ## Unit 05: Register Transfer and Micro-Operations
 
 ### Summary
+
 Introduces Register Transfer Language (RTL) for describing data flow between registers, the bus system, memory read/write operations, and the four categories of micro-operations: register transfer, arithmetic, logical, and shift.
 
 ### Key Definitions and Concepts
+
 - **Register Transfer Language (RTL):** Symbolic notation for describing micro-operation sequences among registers. Example: R2 ← R1 means "transfer R1 to R2."
 - **Register:** Named with capital letters (MAR, PC, IR, AC, DR, etc.).
 - **Conditional Transfer:** P: R2 ← R1 — transfer occurs only if control variable P = 1.
@@ -373,27 +412,32 @@ Introduces Register Transfer Language (RTL) for describing data flow between reg
 ### Bus Selection Table (4-register system)
 
 | S1 | S0 | Register on Bus |
-|----|-----|----------------|
-| 0  | 0   | A              |
-| 0  | 1   | B              |
-| 1  | 0   | C              |
-| 1  | 1   | D              |
+|----|----|----------------|
+| 0  | 0  | A              |
+| 0  | 1  | B              |
+| 1  | 0  | C              |
+| 1  | 1  | D              |
 
 ### Exam Questions and Answers
 
 **Q1. What is Register Transfer Language?**
+
 A: RTL is a symbolic notation used to describe micro-operation sequences among registers. It specifies what data transfers and operations take place in which registers and under what conditions.
 
 **Q2. What are the two methods for constructing a common bus?**
+
 A: (1) Using multiplexers — select lines choose which register's output drives the bus. (2) Using three-state bus buffers — only the enabled buffer drives the bus; others are in high-impedance state.
 
 **Q3. What does R3 ← R1 + R2' + 1 represent?**
+
 A: This is the subtraction operation R3 ← R1 − R2. R2' is the 1's complement of R2; adding 1 gives the 2's complement; then adding R1 performs R1 − R2.
 
 **Q4. Describe the four types of micro-operations.**
+
 A: (1) Register transfer: moves data between registers unchanged. (2) Arithmetic: add, subtract, increment, decrement, complement. (3) Logical: AND, OR, XOR, NOT on individual bits. (4) Shift: move bits left or right within a register.
 
 **Q5. What is the difference between logical and arithmetic shift?**
+
 A: In a logical shift, 0 fills the vacated bit position. In an arithmetic right shift, the sign bit is replicated to preserve the sign of a signed number. In arithmetic left shift, 0 fills the LSB but the sign bit must not change.
 
 ---
@@ -401,9 +445,11 @@ A: In a logical shift, 0 fills the vacated bit position. In an arithmetic right 
 ## Unit 06: Instruction Codes and Instruction Cycles
 
 ### Summary
+
 Describes how a basic computer is organized around a stored program, how instructions are encoded, the role of each computer register, the common bus system connecting them, hardwired vs. microprogrammed control, and the four-phase instruction cycle.
 
 ### Key Definitions and Concepts
+
 - **Program:** A set of instructions specifying operations, operands, and their sequence.
 - **Instruction Code:** A binary code specifying a micro-operation sequence. Consists of an operation code and an address.
 - **Stored Program Organization:** Instructions and data reside in the same memory. PC points to the next instruction.
@@ -433,11 +479,13 @@ Describes how a basic computer is organized around a stored program, how instruc
 4. **Execute:** T4 onward — depends on instruction type
 
 ### Instruction Types (after decode at T3)
+
 - D7=0: Memory Reference Instruction (MRI)
 - D7=1, I=0: Register Reference Instruction
 - D7=1, I=1: Input-Output Instruction
 
 ### Key MRI Micro-operations
+
 | Instruction | Operation |
 |-------------|-----------|
 | AND to AC | D0T4: DR←M[AR]; D0T5: AC←AC∧DR, SC←0 |
@@ -450,21 +498,27 @@ Describes how a basic computer is organized around a stored program, how instruc
 ### Exam Questions and Answers
 
 **Q1. What are the four phases of the instruction cycle?**
+
 A: (1) Fetch instruction from memory, (2) Decode the instruction, (3) Read the effective address from memory (if indirect), (4) Execute the instruction.
 
 **Q2. How is a direct address different from an indirect address?**
+
 A: In direct addressing, the address field contains the actual address of the operand. In indirect addressing, the address field points to a memory location that contains the effective (actual) address — a two-step lookup.
 
 **Q3. What is the role of the sequence counter (SC)?**
+
 A: The SC is a 4-bit counter that generates 16 timing signals T0–T15 in sequence. It is incremented each clock pulse and cleared to 0 when an instruction completes, causing control to return to T0 for the next instruction.
 
 **Q4. How does the control unit distinguish between instruction types?**
+
 A: Based on decoder output D7 and flip-flop I: D7=0 → MRI; D7=1, I=0 → Register Reference; D7=1, I=1 → I/O instruction.
 
 **Q5. What register holds the address of the next instruction to be executed?**
+
 A: The **Program Counter (PC)**, which is a 12-bit register.
 
 **Q6. What are the differences between hardwired and microprogrammed control?**
+
 A: Hardwired is implemented directly in gates and flip-flops — fast, but difficult to modify. Microprogrammed stores control in memory — flexible and easier to change, but slower.
 
 ---
@@ -472,9 +526,11 @@ A: Hardwired is implemented directly in gates and flip-flops — fast, but diffi
 ## Unit 07: Machine Language
 
 ### Summary
+
 Covers the categories of machine language (binary, octal/hex, symbolic, high-level), the 25 basic computer instructions, assembly language structure (label, instruction, comment fields), pseudo-instructions, the two-pass assembly process, and program loops.
 
 ### Key Definitions and Concepts
+
 - **Binary Code:** Raw binary instructions — machine directly understands but humans cannot easily read.
 - **Symbolic Code (Assembly Language):** Uses mnemonics (three-letter symbols) for opcodes and symbolic addresses.
 - **High-Level Language:** Problem-oriented; translated by a compiler (e.g., Fortran, C).
@@ -525,18 +581,23 @@ Covers the categories of machine language (binary, octal/hex, symbolic, high-lev
 ### Exam Questions and Answers
 
 **Q1. What are the four categories of machine language programs?**
+
 A: (1) Binary code — raw binary. (2) Octal/Hexadecimal code — equivalent hex/octal. (3) Symbolic code — mnemonics and symbolic addresses (assembly language). (4) High-level languages — problem-oriented (Fortran, C, etc.).
 
 **Q2. What is the difference between an MRI and a Non-MRI instruction?**
+
 A: An MRI (Memory Reference Instruction) contains an opcode and an address (e.g., LDA X, ADD Y). A Non-MRI (register-reference or I/O) has only an opcode with no address (e.g., CLA, HLT, INP).
 
 **Q3. Describe what happens in each pass of a two-pass assembler.**
+
 A: Pass 1: Scans the entire program, assigns memory locations to each instruction/operand, builds the Address Symbol Table mapping labels to their addresses. Pass 2: Translates each instruction to binary using four lookup tables (pseudo, MRI, non-MRI, address symbol).
 
 **Q4. What are pseudo-instructions?**
+
 A: Pseudo-instructions (ORG, END, DEC, HEX) are directives to the assembler itself, not actual machine instructions. They tell the assembler where to place code (ORG), mark the program end (END), or define constant values (DEC, HEX).
 
 **Q5. How is a program loop implemented in assembly language?**
+
 A: A counter is initialized to a negative count (e.g., −100). A pointer holds the address of the first operand. Inside the loop, the ISZ instruction increments the counter; when it reaches 0 (skip condition), the loop ends. BUN branches back to the loop start when no skip occurs.
 
 ---
@@ -544,9 +605,11 @@ A: A counter is initialized to a negative count (e.g., −100). A pointer holds 
 ## Unit 08: Machine Programming
 
 ### Summary
+
 Covers software implementations of operations not available in hardware (OR, multiply), shift programming, subroutines and the BSA linkage mechanism, input/output character programming, interrupt-driven I/O, and the interrupt service routine.
 
 ### Key Definitions and Concepts
+
 - **Subroutine:** A reusable self-contained sequence of instructions. Called from multiple places in a program.
 - **BSA (Branch and Save Address):** The basic computer's subroutine call instruction. Saves the return address in the first location of the subroutine; branches to subroutine+1.
 - **Subroutine Linkage:** The mechanism for branching to a subroutine (call) and returning (return). First memory location of subroutine holds the return address.
@@ -568,18 +631,23 @@ Covers software implementations of operations not available in hardware (OR, mul
 ### Exam Questions and Answers
 
 **Q1. How does the basic computer implement OR using only AND and NOT?**
+
 A: By De Morgan's theorem: A OR B = (A' AND B')'. Steps: complement A → store; complement B → AND with stored A' → complement the result. Seven assembly instructions implement this.
 
 **Q2. How does the BSA instruction implement subroutine calls?**
+
 A: BSA saves the current PC value (return address) in the first memory location of the subroutine, then loads PC with subroutine address + 1, branching into the subroutine body. Return is done with an indirect BUN to the subroutine's first location.
 
 **Q3. What is the difference between programmed I/O and interrupt-driven I/O?**
+
 A: Programmed I/O: CPU continuously polls the flag bit, wasting time in a busy loop. Interrupt I/O: CPU continues executing other code; the I/O device sets a flag and sends an interrupt request; CPU then services it. Interrupt I/O is far more efficient.
 
 **Q4. What must an interrupt service routine do before returning?**
+
 A: (1) Save AC and E contents. (2) Check which flag caused the interrupt. (3) Service the I/O device. (4) Restore AC and E. (5) Turn interrupt ON (ION). (6) Execute indirect BUN to location 0 (the saved return address).
 
 **Q5. Why is the highest-priority device serviced first during interrupt handling?**
+
 A: Because the service routine checks flags sequentially; the first flag checked determines which device is serviced first. Priority is established by the order of checking.
 
 ---
@@ -587,9 +655,11 @@ A: Because the service routine checks flags sequentially; the first flag checked
 ## Unit 09: Register Organization
 
 ### Summary
+
 Covers CPU structure (register set, ALU, control), general register organization with a common bus and multiplexers, the 14-bit control word concept, the stack data structure (PUSH/POP), register stack vs. memory stack, and expression evaluation using postfix notation.
 
 ### Key Definitions and Concepts
+
 - **CPU Components:** Register set (stores data), ALU (performs operations), Control unit (manages data flow).
 - **General Register Organization:** Multiple registers connected via two buses (A and B) to a common ALU. Outputs go to all registers; a decoder selects the destination.
 - **Multiplexer A (MUX A):** Selects source register for ALU's A input.
@@ -629,18 +699,23 @@ Result: **42**
 ### Exam Questions and Answers
 
 **Q1. What are the three main components of a CPU?**
+
 A: Register set (stores intermediate and final results, addresses, and control data), ALU (performs arithmetic and logic operations), and Control unit (coordinates data movement and sequencing of micro-operations).
 
 **Q2. What is a control word and what are its fields?**
+
 A: A 14-bit word that specifies a complete micro-operation: SELA (3 bits, source A), SELB (3 bits, source B), SELD (3 bits, destination), OPR (5 bits, ALU operation). When applied to the register unit's selection inputs, it directs one complete data transfer and operation.
 
 **Q3. Distinguish between PUSH and POP stack operations.**
+
 A: PUSH inserts data on top of the stack — SP is incremented first, then the data is written to M[SP]. POP removes data from top — data is read from M[SP], then SP is decremented.
 
 **Q4. What is the advantage of using postfix notation for arithmetic expressions?**
+
 A: Postfix (Reverse Polish Notation) needs no parentheses, and operators appear in the order of evaluation. It can be evaluated left-to-right using a simple stack algorithm with no backtracking.
 
 **Q5. Convert (A+B)×(C+D) to postfix notation.**
+
 A: **AB+CD+×**
 
 ---
@@ -648,9 +723,11 @@ A: **AB+CD+×**
 ## Unit 10: Addressing Modes
 
 ### Summary
+
 Covers instruction format fields (opcode, address, mode), the three types of CPU organization (single accumulator, general register, stack), instruction formats with different numbers of addresses (0 to 3), RISC-style instructions, and all major addressing modes with their effective address computations.
 
 ### Key Definitions and Concepts
+
 - **Instruction Fields:** Operation code (what to do), Address field (where the operand is), Mode field (how to interpret the address).
 - **Effective Address:** The actual memory address used to access the operand, computed from the mode.
 - **CPU Organizations:**
@@ -666,7 +743,7 @@ Covers instruction format fields (opcode, address, mode), the three types of CPU
 ### Addressing Modes Table
 
 | Mode | Effective Address (EA) | Notes |
-|------|----------------------|-------|
+|------|------------------------|-------|
 | Implied | No EA needed | Operand implied (e.g., CLA uses AC) |
 | Immediate | EA = instruction itself (address field IS the operand) | Fast; no memory access for operand |
 | Register | No EA; operand is in specified register | Fastest; no memory access |
@@ -684,7 +761,7 @@ Covers instruction format fields (opcode, address, mode), the three types of CPU
 Instruction at address 200-201; address field = 500; PC = 202 after fetch; R1 = 400; XR = 100.
 
 | Mode | EA | Operand Loaded into AC |
-|------|----|----------------------|
+|------|----|------------------------|
 | Direct | 500 | M[500] = 800 |
 | Immediate | 201 | 500 (the address field itself) |
 | Indirect | M[500] = 800 | M[800] = 300 |
@@ -712,21 +789,27 @@ PUSH A; PUSH B; ADD;  PUSH C; PUSH D; ADD;  MUL;  POP X
 ### Exam Questions and Answers
 
 **Q1. What are the three fields of a typical instruction format?**
+
 A: Operation code (specifies operation), Address field (specifies operand location or register), Mode field (specifies how to find or compute the effective address).
 
 **Q2. What is the effective address?**
+
 A: The actual memory address from which the operand is retrieved (or to which a branch goes), computed according to the addressing mode from the address field of the instruction.
 
 **Q3. Explain the difference between direct and indirect addressing.**
+
 A: In direct addressing, the address field contains the operand's memory address directly (one memory access). In indirect addressing, the address field points to a memory location that contains the effective address — requiring two memory accesses.
 
 **Q4. Why is RISC instruction design beneficial?**
+
 A: RISC keeps all computational instructions register-to-register (no memory operands), simplifying the instruction set and enabling efficient pipelining. Only LOAD and STORE access memory, which is the slowest component.
 
 **Q5. What is the difference between indexed and base-register addressing?**
+
 A: Indexed: EA = index register + address field. The index register holds a displacement from a known base (used for array access). Base-register: EA = base register + address field. The base register holds the base of a memory segment (used for program relocation in multiprogramming).
 
 **Q6. What is relative addressing mode and when is it used?**
+
 A: EA = PC + signed offset in address field. Used primarily for branch instructions, allowing position-independent code. The short offset can be specified with fewer bits than a full memory address.
 
 ---
@@ -734,9 +817,11 @@ A: EA = PC + signed offset in address field. Used primarily for branch instructi
 ## Unit 11: Pipeline Processing
 
 ### Summary
+
 Covers the concept and motivation for parallel processing, Flynn's taxonomy (SISD, SIMD, MISD, MIMD), pipelining fundamentals, arithmetic pipelines (floating-point), instruction pipelines, the four-segment pipeline, pipeline hazards (data dependency, branch), and methods to handle them.
 
 ### Key Definitions and Concepts
+
 - **Parallel Processing:** Simultaneous execution of multiple tasks to increase throughput and computational speed.
 - **Throughput:** The number of tasks completed per unit time.
 - **Flynn's Classification:**
@@ -782,18 +867,23 @@ X = 0.9504 × 10³, Y = 0.8200 × 10²
 ### Exam Questions and Answers
 
 **Q1. What is pipelining and why is it used?**
+
 A: Pipelining decomposes a sequential task (e.g., instruction execution) into overlapping sub-stages. While one instruction is in stage 2, the next enters stage 1. This increases throughput (instructions completed per unit time) without increasing clock frequency.
 
 **Q2. Explain Flynn's classification of computer organizations.**
+
 A: SISD: one instruction, one data stream (conventional computer). SIMD: one instruction applied to multiple data items simultaneously (e.g., vector processors). MISD: multiple instructions on same data — theoretical. MIMD: multiple independent instructions on multiple data streams (multiprocessor systems).
 
 **Q3. What is data dependency in a pipeline and how is it handled?**
+
 A: Data dependency occurs when an instruction needs a value that is not yet computed by a previous instruction still in the pipeline. Solutions: hardware interlocks (stall), operand forwarding (pass result directly), or delayed load (compiler reordering).
 
 **Q4. Why does a branch instruction cause problems in a pipeline?**
+
 A: After a branch, the instructions already loaded into the pipeline (fetched sequentially) may be the wrong ones if the branch is taken. The pipeline must be flushed and restarted from the branch target, wasting pipeline cycles.
 
 **Q5. What are the four stages of a floating-point addition pipeline?**
+
 A: (1) Compare exponents — determine which is larger. (2) Align mantissas — shift the smaller number's mantissa right by the exponent difference. (3) Add or subtract the mantissas. (4) Normalize the result — shift mantissa and adjust exponent.
 
 ---
@@ -801,9 +891,11 @@ A: (1) Compare exponents — determine which is larger. (2) Align mantissas — 
 ## Unit 12: Memory Technology
 
 ### Summary
+
 Covers the memory hierarchy (registers → cache → main memory → auxiliary), RAM/ROM chips, memory address maps, associative memory, cache memory and mapping processes (direct, associative, set-associative), virtual memory, and the memory management unit (MMU).
 
 ### Key Definitions and Concepts
+
 - **Main Memory:** Directly communicates with CPU; fast, relatively expensive semiconductor memory (RAM and ROM).
 - **Auxiliary Memory:** Backup storage (magnetic disks, tapes); large capacity, low cost, slow access.
 - **Cache Memory:** Very fast, small memory between CPU and main memory. Compensates for speed mismatch.
@@ -844,24 +936,31 @@ Covers the memory hierarchy (registers → cache → main memory → auxiliary),
 ### Exam Questions and Answers
 
 **Q1. What is the purpose of cache memory?**
+
 A: Cache compensates for the speed mismatch between the fast CPU and slower main memory. It stores recently used instructions and data so the CPU can access them at near-processor speed, reducing the average memory access time.
 
 **Q2. Distinguish between SRAM and DRAM.**
+
 A: SRAM uses flip-flops; retains data without refresh; faster; used for cache. DRAM stores charges on capacitors; must be refreshed periodically; slower but higher density and lower cost; used for main memory.
 
 **Q3. What is associative memory and what are its advantages?**
+
 A: Associative (content-addressable) memory is searched by content rather than address. All words are searched in parallel simultaneously. Advantage: very fast search time. Disadvantage: expensive due to added comparison logic in each cell.
 
 **Q4. Compare direct mapping and associative mapping in cache.**
+
 A: Direct mapping: each main memory block has exactly one possible cache location (fast, simple, but conflict-prone). Associative mapping: a block can go anywhere in cache (no conflicts, but requires parallel tag comparison — expensive). Set-associative is a practical compromise.
 
 **Q5. What is virtual memory and why is it useful?**
+
 A: Virtual memory allows programs to use an address space larger than physical memory by using disk as an extension. The OS manages moving pages between disk and RAM. Programs behave as if they have a large contiguous address space regardless of physical memory size.
 
 **Q6. What does the MMU do?**
+
 A: The Memory Management Unit translates virtual (logical) addresses generated by the CPU into physical (real) memory addresses. It uses the page table (and TLB for speed) to perform this mapping at runtime.
 
 **Q7. What is the role of the bootstrap loader?**
+
 A: The bootstrap loader is a small program stored in ROM. When power is turned on, the CPU begins executing it. It loads the operating system from disk into RAM and transfers control to the OS, preparing the computer for use.
 
 ---
@@ -869,9 +968,11 @@ A: The bootstrap loader is a small program stored in ROM. When power is turned o
 ## Unit 13: I/O Subsystems
 
 ### Summary
+
 Covers peripheral devices, ASCII encoding, I/O interface, the I/O bus and its commands, I/O vs. memory bus configurations, strobe and handshaking data transfer methods, serial vs. parallel transmission, and the three modes of data transfer (programmed, interrupt, DMA).
 
 ### Key Definitions and Concepts
+
 - **Peripheral Device:** Any device connected online under direct computer control (keyboard, monitor, printer, disks).
 - **ASCII:** American Standard Code for Information Interchange. 7-bit code representing 128 characters (94 printable + 34 control). Extended to 8 bits (1 byte) in practice.
 - **ASCII Control Characters:**
@@ -911,21 +1012,27 @@ Covers peripheral devices, ASCII encoding, I/O interface, the I/O bus and its co
 ### Exam Questions and Answers
 
 **Q1. What is ASCII and how many characters does it encode?**
+
 A: ASCII (American Standard Code for Information Interchange) is a 7-bit code that encodes 128 characters: 94 printable (26 uppercase, 26 lowercase, 10 digits, 32 special) and 34 non-printing control characters.
 
 **Q2. What are the four types of I/O commands?**
+
 A: Control (activate peripheral), Status (test device condition), Data Output (interface transfers data from bus to device), Data Input (interface receives data from device into buffer register).
 
 **Q3. Compare strobe and handshaking data transfer methods.**
+
 A: Strobe: one control signal indicates when data is valid; no acknowledgment — sender cannot confirm receipt. Handshaking: two control signals — source asserts "data valid," destination responds "data accepted." Handshaking is more reliable.
 
 **Q4. Distinguish between programmed I/O, interrupt I/O, and DMA.**
+
 A: Programmed I/O: CPU busy-polls the device flag continuously (CPU is occupied). Interrupt I/O: device signals CPU when ready; CPU is free to do other work between transfers. DMA: device controller transfers data directly to/from memory without CPU involvement for each word; CPU is only involved at start/end.
 
 **Q5. What is the difference between memory-mapped I/O and isolated I/O?**
+
 A: Isolated I/O: separate address spaces and control lines for I/O and memory; requires special IN/OUT instructions. Memory-mapped I/O: I/O interface registers share the memory address space; normal load/store instructions access I/O. Memory-mapped is simpler programmatically.
 
 **Q6. Describe asynchronous serial transmission format.**
+
 A: Each character is framed: a start bit (always 0) marks the beginning, followed by 7 or 8 data bits, and one or two stop bits (always 1). Receiver detects the start bit by the line going from 1 to 0, then samples at the correct bit intervals.
 
 ---
@@ -933,9 +1040,11 @@ A: Each character is framed: a start bit (always 0) marks the beginning, followe
 ## Unit 14: Hardware Description Logic (HDL)
 
 ### Summary
+
 Introduces Hardware Description Languages (HDLs), specifically Verilog (and briefly VHDL), covering Verilog program structure, operators (arithmetic, logical, bitwise, reduction, relational, equity, conditional), and Verilog code implementations for basic gates, adders, multiplexers, demultiplexers, encoders, and decoders.
 
 ### Key Definitions and Concepts
+
 - **HDL (Hardware Description Language):** A language for describing digital hardware structure and behavior, which can be synthesized into actual circuits.
 - **Verilog:** "Verify Logic." Case-sensitive, vendor-independent HDL. Supports simulation and synthesis. Basic unit: **module**.
 - **VHDL:** VHSIC Hardware Description Language (VHSIC = Very High Speed Integrated Circuit). Describes behavior and organization at multiple abstraction levels.
@@ -1042,25 +1151,32 @@ endmodule
 ### Exam Questions and Answers
 
 **Q1. What is an HDL and why is it used?**
+
 A: A Hardware Description Language describes the structure and behavior of digital hardware in a textual form. HDLs (Verilog, VHDL) are used to design, simulate, and synthesize digital circuits. They allow hardware to be described, tested in simulation, and then automatically translated into actual gate-level circuits.
 
 **Q2. What is the difference between Verilog and VHDL?**
+
 A: Verilog (Verify Logic) is case-sensitive, vendor-independent, C-like syntax, supports simulation and synthesis. VHDL (VHSIC HDL) is more verbose, Ada-like syntax, strongly typed. Both describe hardware at multiple abstraction levels. Verilog is more common in industry; VHDL is common in defense and Europe.
 
 **Q3. Write the Verilog assign statement for a 2-to-1 MUX.**
+
 A: `assign Z = S ? i0 : i1;`
 When S=0, Z=i0; when S=1, Z=i1.
 
 **Q4. What does `~(a ^ b)` represent in Verilog?**
+
 A: It implements the XNOR gate — the bitwise NOT of XOR. Output is 1 when both inputs are equal (both 0 or both 1), 0 otherwise.
 
 **Q5. What is the difference between bitwise and logical operators in Verilog?**
+
 A: Bitwise operators (`&`, `|`, `^`, `~`) operate on individual bits of a multi-bit value. Logical operators (`&&`, `||`, `!`) treat the entire operand as a single true/false value (any non-zero = true). For single-bit signals, they are equivalent.
 
 **Q6. Write the Verilog module for a 3-to-8 decoder.**
+
 A: See the decoder module above. Eight `assign` statements generate each of the 8 output minterms (e.g., d0 = ~x & ~y & ~z; d7 = x & y & z).
 
 **Q7. What is the purpose of the `endmodule` keyword in Verilog?**
+
 A: `endmodule` marks the end of a module definition. Everything between `module <name>(ports);` and `endmodule` defines the interface, internal signals, and logic of that hardware block.
 
 ---
@@ -1068,7 +1184,7 @@ A: `endmodule` marks the end of a module definition. Everything between `module 
 ## Quick Reference: Key Formulas and Facts
 
 | Topic | Formula / Fact |
-|-------|---------------|
+|-------|----------------|
 | 2's complement of N (n-bit) | 2ⁿ − N |
 | SOP minimization | Group 1s in K-map |
 | POS minimization | Group 0s in K-map |

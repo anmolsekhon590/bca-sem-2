@@ -44,6 +44,27 @@
 - [x] C structs, aggregate initialization — `exercise-03-4.cpp`
 - [x] Heap allocation with `new`/`delete`, `->` operator — `exercise-03-5.cpp`
 
+### Unit 7 — More on Classes and Objects
+- [x] Private helper function called from public method — `exercise-04-1.cpp`
+- [x] Array as class member, iterating with member functions — `exercise-04-2.cpp`
+
+### Unit 8 — Handling Functions
+- [x] Call by value vs call by reference — `exercise-04-3.cpp`
+- [x] Default arguments — `exercise-04-4.cpp`
+- [x] Object as function argument (by value and by reference) — `exercise-04-5.cpp`
+
+### Unit 9 — More on Functions
+- [x] Inline functions — `exercise-05-1.cpp`
+- [x] Function overloading — `exercise-05-2.cpp`, `exercise-05-5.cpp`
+- [x] Friend function (single class) — `exercise-05-3.cpp`
+- [x] Friend function (two classes) — `exercise-05-4.cpp`
+
+### Unit 10 — Static Members & Polymorphism
+- [x] Static data member, static function — `exercise-06-1.cpp`
+- [x] Static-only class, `ClassName::method()` — `exercise-06-2.cpp`
+- [x] Compile-time polymorphism (overloading) — `exercise-06-3.cpp`
+- [x] Runtime polymorphism (virtual functions, inheritance) — `exercise-06-4.cpp`
+
 ---
 
 ## Not Yet Covered
@@ -51,10 +72,7 @@
 | Unit | Topic | Notes |
 |------|-------|-------|
 | 2 (remaining) | Tokens, keywords, identifiers | Mostly conceptual |
-| 7 | Nested/private member functions, arrays in class, `new`/`delete` | — |
-| 8 | Functions — call by value/reference, default arguments | — |
-| 9 | Inline functions, friend functions, function overloading | — |
-| 10 | Static members, compile-time vs runtime polymorphism | — |
+| 11 | Constructors and destructors (default, parameterized, copy, dynamic) | — |
 | 11 | Constructors and destructors (default, parameterized, copy, dynamic) | — |
 | 12 | Constructors with default args, dynamic initialization | — |
 | 13 | Inheritance — single, multiple, multilevel, hierarchical, hybrid | — |
@@ -64,6 +82,5 @@
 
 ## Recommended Next Steps
 
-1. **Unit 7** — nested/private member functions, arrays in class, `new`/`delete` in classes
-2. **Unit 8** — functions: call by value/reference, default arguments
-3. Continue with Units 9-14 (functions, constructors, inheritance, file handling)
+1. **Unit 11** — constructors and destructors
+2. Continue with Units 12-14 (more constructors, inheritance, file handling)

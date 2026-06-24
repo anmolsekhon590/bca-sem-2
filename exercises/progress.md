@@ -67,12 +67,27 @@
 
 ---
 
+### Unit 12 — More on Constructors & Destructors
+- [x] Constructor with default arguments — `exercise-08-1.cpp`
+- [x] Constructor initializer list — `exercise-08-2.cpp`
+- [x] Dynamic initialization — `exercise-08-3.cpp`
+- [x] Delegating constructors — `exercise-08-4.cpp`
+
+### Unit 11 — Constructors & Destructors
+- [x] Default constructor — `exercise-07-1.cpp`
+- [x] Parameterized constructor — `exercise-07-2.cpp`
+- [x] Constructor overloading — `exercise-07-3.cpp`
+- [x] Copy constructor — `exercise-07-4.cpp`
+- [x] Destructor — `exercise-07-5.cpp`
+
+---
+
 ## Not Yet Covered
 
 | Unit | Topic | Notes |
 |------|-------|-------|
 | 2 (remaining) | Tokens, keywords, identifiers | Mostly conceptual |
-| 11 | Constructors and destructors (default, parameterized, copy, dynamic) | — |
+| 12 | Constructors with default args, dynamic initialization | — |
 | 11 | Constructors and destructors (default, parameterized, copy, dynamic) | — |
 | 12 | Constructors with default args, dynamic initialization | — |
 | 13 | Inheritance — single, multiple, multilevel, hierarchical, hybrid | — |
@@ -80,7 +95,29 @@
 
 ---
 
+---
+
+## Exercise Progress
+
+> Tracking by exercise series only. Theory will be covered separately after all exercises are done.
+
+| Series | Unit | Status |
+|--------|------|--------|
+| exercise-01 | Unit 3 — Operators & Type Casting | ✅ Done |
+| exercise-02 | Unit 4 — Control Structures | ✅ Done |
+| exercise-03 | Unit 5 — Pointers & Structures | ✅ Done |
+| exercise-04 | Units 7 & 8 — Classes, Functions | ✅ Done |
+| exercise-05 | Unit 9 — More on Functions | ✅ Done |
+| exercise-06 | Unit 10 — Static Members & Polymorphism | ✅ Done |
+| exercise-07 | Unit 11 — Constructors & Destructors | ✅ Done |
+| exercise-08 | Unit 12 — More on Constructors | ✅ Done |
+| exercise-09 | Unit 13 — Inheritance | 🔄 In Progress |
+| exercise-10 | Unit 14 — File Handling | ⬜ Not Started |
+
+**Progress: 8 / 10 — 80%**
+
 ## Recommended Next Steps
 
-1. **Unit 11** — constructors and destructors
-2. Continue with Units 12-14 (more constructors, inheritance, file handling)
+1. **exercise-08** — constructors with default args, dynamic initialization
+2. **exercise-09** — inheritance
+3. **exercise-10** — file handling

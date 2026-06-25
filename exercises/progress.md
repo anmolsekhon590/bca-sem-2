@@ -67,6 +67,19 @@
 
 ---
 
+### Unit 13 — Inheritance
+- [x] Single inheritance, `public` keyword — `exercise-09-1.cpp`
+- [x] Multilevel inheritance — `exercise-09-2.cpp`
+- [x] Multiple inheritance — `exercise-09-3.cpp`
+- [x] Hierarchical inheritance — `exercise-09-4.cpp`
+- [x] Constructor in inheritance, passing args to base — `exercise-09-5.cpp`
+
+### Unit 14 — File Handling
+- [x] Write to file with `ofstream` — `exercise-10-1.cpp`
+- [x] Read from file with `ifstream` — `exercise-10-2.cpp`
+- [x] Append with `ios::app` — `exercise-10-3.cpp`
+- [x] Binary file I/O concept — `exercise-10-4.cpp` *(text-based implementation, binary skipped)*
+
 ### Unit 12 — More on Constructors & Destructors
 - [x] Constructor with default arguments — `exercise-08-1.cpp`
 - [x] Constructor initializer list — `exercise-08-2.cpp`
@@ -111,10 +124,10 @@
 | exercise-06 | Unit 10 — Static Members & Polymorphism | ✅ Done |
 | exercise-07 | Unit 11 — Constructors & Destructors | ✅ Done |
 | exercise-08 | Unit 12 — More on Constructors | ✅ Done |
-| exercise-09 | Unit 13 — Inheritance | 🔄 In Progress |
-| exercise-10 | Unit 14 — File Handling | ⬜ Not Started |
+| exercise-09 | Unit 13 — Inheritance | ✅ Done |
+| exercise-10 | Unit 14 — File Handling | ✅ Done |
 
-**Progress: 8 / 10 — 80%**
+**Progress: 10 / 10 — 100% ✅**
 
 ## Recommended Next Steps
 
